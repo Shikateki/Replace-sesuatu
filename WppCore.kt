@@ -12,11 +12,12 @@ import android.text.TextUtils
 import android.util.LruCache
 import android.widget.Toast
 import com.wmods.wppenhacer.xposed.bridge.client.LocalClient
+import com.wmods.wppenhacer.xposed.bridge.client.BaseClient
 import org.json.JSONObject
 import org.luckypray.dexkit.query.enums.StringMatchType
 import java.io.File
 import java.lang.reflect.Field
-import java.lang.reflect.Method
+impofun initBridgert java.lang.reflect.Method
 import java.util.Collections
 import java.util.concurrent.ConcurrentHashMap
 
@@ -213,9 +214,10 @@ object WppCore {
     }
 
     fun initBridge(context: Context) {
-    client = LocalClient()
-    XposedBridge.log("WaEnhancer: Local EdXposed bridge initialized")
-}
+           client = LocalClient()
+           XposedBridge.log("WaEnhancer: Local
+    EdXposed bridge initialized")
+    }
 
 
     @JvmStatic
